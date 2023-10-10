@@ -1,0 +1,147 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #c2e59c;
+
+    background: -webkit-linear-gradient(to right, #64b3f4, #c2e59c);
+
+    background: linear-gradient(to bottom right, rgb(48, 43, 97), rgb(110, 107, 141));
+
+
+
+}
+
+.rock--paper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(222, 221, 231);
+    padding: 50px;
+    border-radius: 20px;
+    text-align: center;
+    color: rgb(48, 43, 97);
+}
+
+.rock--title {
+    font-size: 60px;
+}
+
+.rock--score {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.game--select {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 60px 0px;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.selection {
+    font-size: 70px;
+    padding: 30px;
+    color: rgb(48, 43, 97);
+    border: 2px solid;
+    border-radius: 7px;
+}
+
+.selection:hover {
+    background-color: rgb(48, 43, 97);
+    color: white;
+}
+
+.again--btn {
+    font-size:x-large;
+    padding: 30px;
+    color: rgb(48, 43, 97);
+    background-color: rgb(236, 236, 236);
+    border: 2px solid;
+    border-radius: 7px;
+}
+
+.again--btn:hover {
+    background-color: rgb(48, 43, 97);
+    color: white;
+}
+
+.winning--info {
+    font-size: 20px;
+}
+
+.fa-solid {
+    margin-right: 15px;
+}
+
+
+/* CSS classes for button animations */
+.btn-animate {
+    transform: scale(1.1);
+    transition: transform 0.2s;
+
+}
+
+.btn-background {
+    background-color: rgb(48, 43, 97);
+    color: white;
+}
+
+.choice-animate {
+    animation: fadeIn 5s;
+    -webkit-animation: fadeIn 5s;
+    -moz-animation: fadeIn 5s;
+    -o-animation: fadeIn 5s;
+    -ms-animation: fadeIn 5s;
+}
+
+.fade-in {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out; /* Add a transition effect for opacity */
+}
+
+
+/*CSS classes when game over*/
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    
+}
+
+.overlay-content {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    padding: 60px;
+}
+
+.overlay h1 {
+    font-size: 40px;
+    margin-bottom: 60px;
+}
+
+

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock | Paper | Scissors</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;800&family=Poppins&family=Roboto&display=swap"
+        rel="stylesheet">
+    <script src="index.js"></script>
+    <script src="https://kit.fontawesome.com/af37a4128f.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="rock--paper">
+            <div class="title--desc">
+                <h1 class="rock--title">Rock Paper Scissors</h1>
+                <div class="rock--score">
+                    <h2 class="rock--player" id="rock-player">Player: 0</h2>
+                    <h2 class="rock--comp" id="rock-comp">Computer: 0</h2>
+                </div>
+            </div>
+            <div class="game--select">
+                <button class="selection" id="rock-btn"><span><i
+                            class="fa-regular fa-hand-back-fist"></i></span></button>
+                <button class="selection" id="scissors-btn"><span><i
+                            class="fa-regular fa-hand-scissors"></i></span></button>
+                <button class="selection" id="paper-btn"><span><i class="fa-regular fa-hand"></i></span></button>
+            </div>
+            <h2 class="player--choice" id="player-choice">You: </h2>
+            <h2 class="computer--select" id="computer-choice">Computer: </h2>
+            <div class="winning--info" id="winning-info"></div>
+            <div class="overlay" id="overlay">
+                <div class="overlay-content">
+                    <h1 id="game-over-text"></h1>
+                    <button class="again--btn" id="again-btn"><i class="fa-solid fa-rotate-right"></i>Play
+                        Again</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>
